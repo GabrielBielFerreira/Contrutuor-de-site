@@ -20,6 +20,7 @@ Responda em português do Brasil.
 - Construção de páginas: **Taste Skill** (`taste-skill`). Não use outra skill construtora ao mesmo tempo.
 - Revisão: **Impeccable** (hook ativo). Antes de dizer que terminou, rode `/impeccable critique` na página mexida.
 - Referências: **designlang** para extrair tokens de sites de referência (`/extract URL`).
+- Estrutura interna das referências: **REA** (MCP `rea`) no Chrome aberto com `abrir-chrome-rea.ps1` (http://127.0.0.1:9222). Reaproveite a arquitetura, nunca o código, texto ou marca.
 
 ## Processo
 1. Construa o hero sozinho, tire print em 1440 e 390px e só então siga para o resto.

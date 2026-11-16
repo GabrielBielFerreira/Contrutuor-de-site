@@ -49,6 +49,7 @@ if ($versaoNode -lt 22) { Write-Host "Aviso: Node $versaoNode encontrado; o Tast
 Passo "Taste Skill (construtora de sites)" { Plugin "Leonxlnx/taste-skill" "taste-skill@taste-skill" }
 Passo "designlang (engenharia reversa de design)" { Plugin "Manavarya09/design-extract" "designlang@designlang" }
 Passo "Chromium do designlang" { npx -y designlang install-browser }
+Passo "REA (engenharia reversa da estrutura interna)" { Plugin "morluto/rea" "rea@rea" }
 Passo "unslop (tira a cara de IA de projetos antigos)" { Plugin "heydamir/unslop" "unslop@heydamir" }
 Passo "Playwright MCP (o agente abre e mede sites)" { claude mcp add playwright -s user -- cmd /c npx -y "@playwright/mcp@latest" }
 

@@ -17,6 +17,14 @@ Abra a pasta gerada e veja o DESIGN.md, o `tailwind.config` e o tema shadcn. Dep
 /battle https://stripe.com https://vercel.com
 ```
 
+## Teste 1b: estrutura interna com o REA (5 min)
+
+```powershell
+.\scripts\abrir-chrome-rea.ps1 https://linear.app
+```
+
+No Claude Code: "Use o REA no Chrome em http://127.0.0.1:9222 e me explique a estrutura interna da página aberta: seções, hierarquia de títulos, componentes repetidos e rotas. Mostre a evidência." Confira em `/mcp` que o servidor `rea` está conectado.
+
 ## Teste 2: DESIGN.md do cliente (10 min)
 
 1. Copie `templates/DESIGN.md` e `templates/briefing-cliente.md` para a pasta de teste.
@@ -44,6 +52,7 @@ Compare a nota antes e depois de rodar `/unslop` numa cópia do projeto.
 | Problema | Solução |
 |---|---|
 | `/taste-skill`, `/unslop` ou `/extract` não aparecem | Feche e abra o Claude Code ou rode `/reload-plugins`. Veja `/plugin` para conferir o que está instalado. |
+| REA não conecta no Chrome | Feche todas as janelas abertas pelo `abrir-chrome-rea.ps1` e rode de novo; confira http://127.0.0.1:9222/json/version no navegador. |
 | designlang reclama do navegador | `npx designlang install-browser` (ou instale o Google Chrome). |
 | MCP do Playwright não conecta no Windows | Remova e adicione com `cmd /c`: `claude mcp remove playwright` e `claude mcp add playwright -s user -- cmd /c npx -y @playwright/mcp@latest`. |
 | O agente mistura estilos | Tem mais de uma skill construtora ativa. Desative com `claude plugin disable <nome>`. |

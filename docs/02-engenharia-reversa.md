@@ -1,10 +1,14 @@
 # 2. Destaque: engenharia reversa de design de sites
 
+> Este guia cobre o **visual**. Para a **estrutura interna e o funcionamento** (seções, componentes, rotas, interações), use o **REA**: [07-rea-estrutura-interna.md](07-rea-estrutura-interna.md). Os dois juntos são a dupla de engenharia reversa do fluxo.
+
 ## Qual é "o novo de engenharia reversa"
 
-O mais provável é o **designlang** ([Manavarya09/design-extract](https://github.com/Manavarya09/design-extract)): 5,1 mil ⭐, criado em abril/2026, com commits toda semana. Ele é o que mais faz "engenharia reversa de design e UX" de verdade, porque não só copia cores: mede layout, responsividade em 4 larguras, estados de hover/focus, movimento e contraste.
+Para o visual, o mais provável é o **designlang** ([Manavarya09/design-extract](https://github.com/Manavarya09/design-extract)): 5,1 mil ⭐, criado em abril/2026, com commits toda semana. Ele é o que mais faz "engenharia reversa de design e UX" de verdade, porque não só copia cores: mede layout, responsividade em 4 larguras, estados de hover/focus, movimento e contraste.
 
-Os dois concorrentes que também circulam muito:
+Também circulam muito:
+
+- **[REA](https://github.com/morluto/rea)** (464 mil ⭐, abr/2026): o mais estrelado de todos, focado em **como as coisas funcionam por dentro**. Guia próprio em [07-rea-estrutura-interna.md](07-rea-estrutura-interna.md).
 
 - **[ai-website-cloner-template](https://github.com/JCodesMore/ai-website-cloner-template)** (39 mil ⭐, mar/2026): recria o site **inteiro** em Next.js. Bom para estudar, ruim para entregar a cliente (é cópia).
 - **[awesome-design-md](https://github.com/VoltAgent/awesome-design-md)** (128 mil ⭐, mar/2026): a engenharia reversa já feita de 84 sites famosos, em DESIGN.md.

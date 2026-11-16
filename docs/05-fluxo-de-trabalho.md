@@ -22,7 +22,8 @@ Briefing → Referências → DESIGN.md → Construção → Revisão → Deploy
   npx designlang https://referencia-2.com
   npx designlang pair https://referencia-1.com https://referencia-2.com
   ```
-- **Saída:** pasta `referencias/` com os tokens extraídos de cada site.
+- **Estrutura interna (REA):** abra cada referência com `.\scripts\abrir-chrome-rea.ps1 URL` e peça ao Claude Code para mapear seções, componentes, rotas e interações com o REA. Guia: [07-rea-estrutura-interna.md](07-rea-estrutura-interna.md).
+- **Saída:** pasta `referencias/` com os tokens (designlang) e o mapa de estrutura (REA) de cada site.
 - Sem referência do cliente? Pegue 2 DESIGN.md do [awesome-design-md](https://github.com/VoltAgent/awesome-design-md) ou consulte o UI UX Pro Max para o ramo dele.
 
 ## 3. DESIGN.md do cliente (a identidade)

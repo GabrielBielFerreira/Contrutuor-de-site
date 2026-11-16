@@ -12,6 +12,7 @@ for c in node npx claude; do command -v "$c" >/dev/null || { echo "Comando '$c' 
 passo "Taste Skill" plugin Leonxlnx/taste-skill taste-skill@taste-skill
 passo "designlang" plugin Manavarya09/design-extract designlang@designlang
 passo "Chromium do designlang" npx -y designlang install-browser
+passo "REA" plugin morluto/rea rea@rea
 passo "unslop" plugin heydamir/unslop unslop@heydamir
 passo "Playwright MCP" claude mcp add playwright -s user -- npx -y @playwright/mcp@latest
 
