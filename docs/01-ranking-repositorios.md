@@ -30,10 +30,11 @@ Legenda da coluna **Uso**: 🎯 adotar já · 🧰 usar quando precisar · 📚 
 
 ## C. Engenharia reversa e clonagem de sites
 
-Detalhes e passo a passo em [02-engenharia-reversa.md](02-engenharia-reversa.md).
+Visual: [02-engenharia-reversa.md](02-engenharia-reversa.md). Estrutura interna e funcionamento: [07-rea-estrutura-interna.md](07-rea-estrutura-interna.md).
 
 | # | Repositório | ⭐ | O que faz | Uso |
 |---|---|---|---|---|
+| ⭐ | [morluto/rea](https://github.com/morluto/rea) (**REA**) | 464 mil | Engenharia reversa de qualquer coisa via MCP. Em sites: estrutura do DOM, acessibilidade, scripts, rotas, rede, interações e prints, com evidência. Par do designlang (visual × funcionamento). | 🎯 |
 | 1 | [JCodesMore/ai-website-cloner-template](https://github.com/JCodesMore/ai-website-cloner-template) | 39 mil | Template Next.js 16 + shadcn: `/clone-website URL` recria o site inteiro. | 🧰 |
 | 2 | [firecrawl/open-lovable](https://github.com/firecrawl/open-lovable) | 29 mil | Recria qualquer site como app React (estilo Lovable, open source). | 📚 |
 | 3 | [Manavarya09/design-extract](https://github.com/Manavarya09/design-extract) (**designlang**) | 5,1 mil | Lê o design system de qualquer URL e gera tokens, Tailwind, shadcn, Figma, DESIGN.md. Nota de "slop", verificação contra marca. | 🎯 |
@@ -83,6 +84,8 @@ O jeito mais fácil é rodar o script [`scripts/instalar-skills.ps1`](../scripts
 
 ```bash
 # Núcleo recomendado
+/plugin marketplace add morluto/rea                       # REA (estrutura interna)
+/plugin install rea@rea
 npx impeccable install                                   # Impeccable (aceite o hook)
 /plugin marketplace add Leonxlnx/taste-skill             # Taste Skill
 /plugin install taste-skill@taste-skill

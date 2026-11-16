@@ -14,7 +14,7 @@ Aqui ficam a pesquisa das melhores skills e repositórios de design para agentes
    git clone https://github.com/GabrielBielFerreira/Contrutuor-de-site.git
    cd Contrutuor-de-site
    ```
-2. **Instale as skills** (núcleo: Taste Skill, Impeccable, designlang, unslop e Playwright MCP):
+2. **Instale as skills** (núcleo: Taste Skill, Impeccable, designlang, REA, unslop e Playwright MCP):
    ```powershell
    powershell -ExecutionPolicy Bypass -File .\scripts\instalar-skills.ps1
    ```
@@ -33,9 +33,10 @@ No Git Bash, macOS ou Linux use `bash scripts/instalar-skills.sh` (ou `--tudo`).
 | [docs/04-recomendacao.md](docs/04-recomendacao.md) | O que adotar primeiro e o que evitar. |
 | [docs/05-fluxo-de-trabalho.md](docs/05-fluxo-de-trabalho.md) | Fluxo do briefing à entrega com Claude Code, Lovable e Vercel. |
 | [docs/06-testar-agora.md](docs/06-testar-agora.md) | Roteiro de testes depois de instalar. |
+| [docs/07-rea-estrutura-interna.md](docs/07-rea-estrutura-interna.md) | REA: engenharia reversa da estrutura interna e do funcionamento de sites. |
 | [templates/](templates/) | Briefing, modelo de DESIGN.md, CLAUDE.md para projeto de cliente e checklist de entrega. |
 | [prompts/](prompts/) | Prompts prontos para criar o DESIGN.md, construir páginas (Claude Code e Lovable) e resgatar projetos antigos. |
-| [scripts/](scripts/) | Instalador das skills. |
+| [scripts/](scripts/) | Instalador das skills e o `abrir-chrome-rea.ps1` (Chrome de investigação para o REA). |
 | [clientes/](clientes/) | Onde guardar o DESIGN.md de cada cliente (vira sua biblioteca de identidades). |
 
 ## O núcleo recomendado
@@ -43,6 +44,7 @@ No Git Bash, macOS ou Linux use `bash scripts/instalar-skills.sh` (ou `--tudo`).
 | Ferramenta | Papel | ⭐ (16/11/2026) |
 |---|---|---|
 | [designlang](https://github.com/Manavarya09/design-extract) | Engenharia reversa: extrai o design system de qualquer site. | 5,1 mil |
+| [REA](https://github.com/morluto/rea) | Engenharia reversa da estrutura interna: seções, componentes, rotas e interações. | 464 mil |
 | [DESIGN.md (Google)](https://github.com/google-labs-code/design.md) | Formato e validador da identidade de cada cliente. | 29 mil |
 | [Taste Skill](https://github.com/Leonxlnx/taste-skill) | Constrói sites de empresa com cara profissional. | 117 mil |
 | [Impeccable](https://github.com/pbakaus/impeccable) | Revisa e corta a cara de IA a cada arquivo editado. | 111 mil |
@@ -52,4 +54,4 @@ Por que esses e não outros: [docs/04-recomendacao.md](docs/04-recomendacao.md).
 
 ## Licenças
 
-Este repositório **não copia** o código das skills de terceiros: o script instala cada uma direto do repositório original, que continua sendo a fonte das atualizações. Licenças das principais: Taste Skill, Impeccable, designlang, Hallmark, UI UX Pro Max, awesome-design-md e dembrandt são MIT; unslop é CC BY 4.0 (exige crédito ao autor); as skills da Anthropic são Apache 2.0 na maioria. Confira o arquivo LICENSE de cada uma antes de redistribuir.
+Este repositório **não copia** o código das skills de terceiros: o script instala cada uma direto do repositório original, que continua sendo a fonte das atualizações. Licenças das principais: Taste Skill, Impeccable, designlang, REA, Hallmark, UI UX Pro Max, awesome-design-md e dembrandt são MIT; unslop é CC BY 4.0 (exige crédito ao autor); as skills da Anthropic são Apache 2.0 na maioria. Confira o arquivo LICENSE de cada uma antes de redistribuir.

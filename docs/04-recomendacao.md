@@ -2,11 +2,12 @@
 
 O seu problema hoje não é falta de ferramenta. É o agente cair sempre no mesmo esqueleto (Inter em tudo, eyebrow em caixa alta + título + 3 cards com ícone em círculo, shadcn padrão com `rounded-2xl` e sombra suave) e cada projeto reinventar os tokens. Por isso a ordem abaixo ataca primeiro o **sistema** e a **revisão**, e só depois a geração.
 
-## Semana 1: o núcleo (4 ferramentas)
+## Semana 1: o núcleo (5 ferramentas)
 
 | Ordem | Ferramenta | Por quê |
 |---|---|---|
 | 1 | **designlang** | Resolve "cada projeto reinventa tokens": todo cliente começa com um DESIGN.md medido de referências reais. |
+| 1b | **REA** | Par do designlang: mostra a estrutura interna da referência (seções, componentes, rotas, interações), para você copiar a arquitetura e não o visual. |
 | 2 | **DESIGN.md do Google** (`@google/design.md lint`) | Garante que o DESIGN.md está certo e com contraste WCAG antes de gastar tempo construindo. |
 | 3 | **Impeccable** | O hook revisa cada arquivo de UI que o agente edita. É o que mais corta a cara de IA, sem você lembrar de pedir. |
 | 4 | **Taste Skill** | Skill construtora feita para sites de empresa e institucionais, que é a maior parte dos seus clientes. |
@@ -33,6 +34,7 @@ O seu problema hoje não é falta de ferramenta. É o agente cair sempre no mesm
 | Ferramenta | Claude Code | Lovable | Vercel |
 |---|---|---|---|
 | Skills (Taste, Impeccable, unslop, Hallmark) | ✅ completas | ⚠️ só o texto: o Lovable não roda os scripts (Node + Chrome). Dá para colar regras no Knowledge. | ➖ |
+| REA | ✅ (plugin + Chrome de investigação) | ➖ | ✅ inspecione a URL de preview no Chrome de investigação |
 | designlang / dembrandt | ✅ | ➖ rode no seu PC e leve o DESIGN.md para o Knowledge | ➖ |
 | DESIGN.md | ✅ raiz do projeto | ✅ cole no Knowledge do projeto ou do workspace | ✅ vai junto no repositório |
 | `npx impeccable detect URL` / `designlang slop URL` | ✅ | ✅ aponte para a URL de preview do Lovable | ✅ aponte para a URL de preview da Vercel |
